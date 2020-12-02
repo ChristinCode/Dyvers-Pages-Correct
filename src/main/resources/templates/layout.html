@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--/*  Each token will be replaced by their respective titles in the resulting page. */-->
+  <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">Dyvers Pages</title>
+​
+  <link rel="shortcut icon" href="favicon.png">
+​
+  <link rel="stylesheet" href="css/theme.css">
+  
+  <div layout:fragment="headscripts">
+    <!--/* If any individual page doesn't have headscripts, this <div> will not render. */-->
+  </div>
+</head>
+<body>
+	<!--/*
+		Template content is included in each section within .container so
+		errors can be detected if any intended content is not present.
+	*/-->
+​
+	<div class="site-container">
+		<div th:replace="fragments/header"><!-- HEADER --></div>
+​
+		<main class="site-main">
+			<div layout:fragment="content" th:remove="tag"><!-- CONTENT --></div>
+		</main>
+​
+		<div th:replace="fragments/nav"><!-- NAV --></div>
+	</div>
+​
+	<!--/* This is a site-wide JavaScript file. */-->
+	<script src="js/site.js"></script>
+	<script src="js/modules.js"></script>
+​
+	<div layout:fragment="bodyscripts" th:remove="tag">
+		<!--/* If any individual page doesn't have bodyscripts, this <div> will not render. */-->
+	</div>
+</body>
+</html>
