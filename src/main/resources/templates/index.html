@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html layout:decorate="~{layout}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <div layout:fragment="content">
-  	<p>test</p>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dyvrs Pages</title>
+  </head>
+  <body>
+  	<div layout:fragment="content">
+      <div class="main">
+        <div class="homepage-bg">
+          <section class="index__section-tag">
+            <br><br><br><br><br><br><br><br>
+            <p class="index__p-tag">Diverse Businesses for Diverse People.</p>
+            <p class="index__p-tag2">Explore Columbus’s minority owned businesses.</p>
+          </section>
+          <section class="index__category">
+            <br />
+            <br />
+            <br />
+          </section>
+          <div class="index__spot-light--title">
+            <a href="#spotlight_id">
+            Scroll To Spotlight
+            <p class="index__spot-light--title2"><img id="homepage-bg" src="/images/arrow.png"></p> 
+            </a>
+            <br><br><br>
+          </div>
+        </div>
+        <section id="spotlight_id" class="index__spot-light">
+          <div class="index__spot-light--container">
+            <ul class="index__spot-light--container-list"></ul>
+            <br />
+            <br />
+            <br />
+          </div>
+        </section>
+      </div>
+    <script
+      src="../../src/js/html-scripts/homePageScripts.js"
+      type="module"
+    ></script>
+    </div>
+  </body>
 </html>
