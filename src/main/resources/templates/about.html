@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html layout:decorate="~{layout}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Federo&display=swap" rel="stylesheet">
 </head>
   <body>
+    <div layout:fragment="content">
     <!-- <header class="header">
       <h1 class="header__logo"><a href="./index.html">DYVRS<br/>PAGES</a></h1>
       <nav class="header__nav">
@@ -45,20 +46,8 @@
         as we try to build a Columbus that is conscious and open to all its residents’ have to offer.<br/>
       </p>
     </section>
-    <!-- <footer class="footer">
-      <nav class="footer__nav">
-          <ul class="footer__container">
-              <li class="footer__list-item"><a href="./contactUs.html">Contact Us</a></li>
-              <li class="footer__list-item"><a href="./userUpdate-longIn.html">Log In</a></li>
-              <li class="footer__list-item"><a href="./newUserForm.html">Create Account</a></li>
-              <li class="footer__list-item"><a href="./team.html">Team</a></li>
-              <li class="footer__list-item"><a href="./suggestion .html">Suggestions</a></li>
-              <li class="footer__list-item"><a href="./categories.html">Categories</a></li>
-          </ul>
-      </nav>
-      <div class="footer__copyright">&copy;Dyvrs Pages</div>
-  </footer> -->
   <script src="../../src/js/html-scripts/headerScript.js" type="module"></script>
   <script src="../../src/js/html-scripts/footerScript.js" type="module"></script>
+  </div>
   </body>
 </html>
