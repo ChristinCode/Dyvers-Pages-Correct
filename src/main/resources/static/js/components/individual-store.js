@@ -1,7 +1,5 @@
 import { fetchStore } from "../fetch-api.js"
 import { clearElementChildren } from "./clearElementChildren.js";
-import { renderHeader } from "../components/header.js"
-import { renderFooter } from "../components/footer.js"
 export { renderIndividualStore }
 
 

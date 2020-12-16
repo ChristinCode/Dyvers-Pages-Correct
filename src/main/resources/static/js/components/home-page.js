@@ -1,10 +1,9 @@
 import { fetchSpotlight, fetchAllCategories } from "../fetch-api.js";
 import{renderCategory} from "./individual-category.js"
-import { renderHeader } from "./header.js";
-import { renderFooter } from "./footer.js";
 import { renderIndividualStore } from "./individual-store.js";
 export { renderSpotlightOne, renderCategoryCircle };
 
+console.log("testing monkeys");
 
 const renderSpotlightOne = () => {
   for(let i = 0; i<6; i++){

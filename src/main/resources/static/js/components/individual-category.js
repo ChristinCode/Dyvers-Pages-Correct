@@ -1,6 +1,4 @@
 import { fetchCategory } from "../fetch-api.js";
-import { renderHeader } from "../components/header.js"
-import { renderFooter } from "../components/footer.js"
 import { clearElementChildren } from "../components/clearElementChildren.js";
 import{renderIndividualStore} from "../components/individual-store.js"
 
