@@ -1,112 +1,102 @@
 @import url(https://fonts.googleapis.com/css2?family=Andika&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Federo&display=swap);
 * {
-  list-style: none;
+    list-style: none;
 }
-:root{
-    --color-1:#011627;
-    --color-2:#FF3366;
-    --color-3:#2EC4B6;
-    --color-4:#F6F7F8;
-    --color-5:#20A4F3;
+:root {
+    --color-1: #011627;
+    --color-2: rgba(4, 73, 129, 0.246);
+    --color-3: #F6F4F5;
 }
-
-/* :root {f170
-  --color-1: #cb48b7;
-  --color-2: #2e2d4d;
-  --color-3: #337357;
-  --color-4: #6d9f71;
-  --color-5: #e4e3d3;
-} */
-
-/* :root{
-    --color-1:#734B5E;
-    --color-2:#BCBDC0;
-    --color-3:#565857;
-    --color-4:#8A8D91;
-    --color-5:#F5D3C8;
-} */
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: var(--color-3);
 }
-
-html {
-  background-image: linear-gradient(
-    to left,
-    rgba(255, 0, 0, 0),
-    rgba(155, 0, 0, 0.1)
-  );
+input, button{
+    padding: 5px;
+    border-radius: 5px;
 }
-
-.header {
-  color: white;
-  background-color: var(--color-1);
-}
-.footer {
-  color: white;
-  background-color: var(--color-1);
-}
-
 * body {
-  font-family: Andika, "sans-serif";
-  font-size: 20px;
+    font-family: Andika, "sans-serif";
 }
-
-.header__logo {
-  font-family: Federo, "sans serif";
-  padding: auto ;
+html {
+    background-color: var(--color-3);
 }
-
-.footer a {
-  padding: 1em;
-   border-radius: 15%; 
-     color: white;
-  overflow: hidden;
+.logo{
+    opacity: 80%;
+}
+.suggestion__h3-title, .new-user-form__title, .user-update-log-in__title{
+    text-align: center;
+}
+.team__item a{
+    color: var(--color-1);
+}
+.header, .footer {
+    color: var(--color-3);
+    background-color: var(--color-1);
+}
+.index__section-tag{
+    font-family: Federo, sans-serif;
+}
+.index__p-tag{
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+.bold-website{
+    font-weight: bolder;
+    color:blue
+}
+.bold-name, .index__p-tag2{
+    font-size: large; 
+}
+.index__spot-light--title a {
+ color: var(--color-1);
+}    
+.category__business--company-name {
+    font-size: small;
+    font-weight: normal;
+    text-align: center;
 }
 .header__nav li {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 1em;
-  border: 2px solid var(--color-3);
-  border-radius: 15%;
-  color: white;
-  overflow: hidden;
+    color: var(--color-3);
+    overflow: hidden;
 }
-.footer a:hover,
-.header__nav li:hover {
-  background-color: var(--color-3);
-  padding: 1em;
-  color: white;
+.footer__nav li:hover, .header__nav li:hover {
+    background-color: var(--color-2);
+    opacity: 50%;
 }
-.contact__title,
-.category__business--title,
-.about__mission--title,
-.individual-store__title,
-.index__category--title,
+.team__title, .contact__title, .category__business--title, .about__mission--title, .individual-store__title {
+    font-size: x-large;
+}
 .index__spot-light--title {
-  font-size: 30pt;
+    font-size: medium;
 }
 .individual-store__info-item a {
-  color: black;
-  border: 2px solid var(--color-3);
+    color: var(--color-1);
 }
-.index__category--item a {
-  background-color: var(--color-3);
-  margin: 5px;
-  border-radius: 50%;
-  padding: 50px;
-  color: white;
-}
-.index__category--container a {
-  display: grid;
-  grid-row: 2 / 4;
-  margin: 10em;
-}
+.index__spot-light--company-name {
+    font-size: smaller; 
 
-.index__single-category--name {
-  color: blue;
 }
-.category__business--list-item a{
-    color: black;
+.index__single-category--name {
+    color: var(--color-1);
+    font-size: .75rem;
+    }
+.category__business--list-item a {
+    color: var(--color-1);
+}
+.suggestion__div, #portal-page, #new-user-page, #update-user-login {
+    background-color: var(--color-2);
+    color: var(--color-1);
+
+}
+::placeholder {
+    color: var(--color-1);
+}
+/* .category__business--list-item a {
+    color: var(--color-1);
+} */
+
+#suggestion-button {
+    color: var(--color-1);
 }

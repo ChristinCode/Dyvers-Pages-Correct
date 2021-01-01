@@ -6,13 +6,24 @@ context('Navigation', () => {
     cy.visit('http://localhost:8080')
   })
 
-  it('opens the owner portal', () => {
-    // click the "Owner Portal" link
+  it('opens the mission page', () => {
+    // click the "mission page" link
     cy.get('.header__list-item').contains('Mission').click()
 
     // ensure we are on the page by looking for text
     cy.get('.about__mission--title').should('contain', 'Diverse businesses for diverse people')
   })
+
+  it('opens the contact page', () => {
+    cy.get('.header__list-item').contains('Contact').click()
+    cy.get('.about__mission--title').should('contain', 'Diverse businesses for diverse people')
+  })
+
+  it('opens the contact page', () => {
+    cy.get('.header__list-item').contains('').click()
+    cy.get('').should('contain', '')
+  })
+
 
   // it('cy.go() - go back or forward in the browser\'s history', () => {
   //   // https://on.cypress.io/go
