@@ -6,6 +6,12 @@ export { renderCategory };
 console.log("calling individual category js file");
 
 const renderCategory = (categoryId) => {
+
+  // change URL here to match rendered category
+  const categoryUrl = new URL(window.location);
+  categoryUrl.searchParams.set('categoryId', categoryId);
+  window.history.pushState({}, '', categoryUrl);
+
   fetchCategory(categoryId).then((category) => {
     const mainBody = document.querySelector(".main");
     console.log(mainBody);
