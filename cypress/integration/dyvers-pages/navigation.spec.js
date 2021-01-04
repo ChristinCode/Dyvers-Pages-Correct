@@ -19,12 +19,6 @@ context('Navigation', () => {
     cy.get('.about__mission--title').should('contain', 'Diverse businesses for diverse people')
   })
 
-  it('opens the contact page', () => {
-    cy.get('.header__list-item').contains('').click()
-    cy.get('').should('contain', '')
-  })
-
-
   // it('cy.go() - go back or forward in the browser\'s history', () => {
   //   // https://on.cypress.io/go
 
