@@ -15,9 +15,22 @@ context('Navigation', () => {
   })
 
   it('opens the contact page', () => {
-    cy.get('.header__list-item').contains('Contact').click()
-    cy.get('.about__mission--title').should('contain', 'Diverse businesses for diverse people')
+    cy.get('.footer__list-item').contains('Contact').click()
+    cy.get('.contact__title').should('contain', 'Contact Information for Dyvrs Pages')
   })
+
+  it('can navigate in-page with category circle', () => {
+    cy.get('.index__circle_container a.deg0 img').click(); // FIXME: this depends on "Restaurants" being in position 0
+    cy.get('.category__business--title').should('contain', 'Restaurants');
+    // TODO: make sure the category circle disappears when a specific link is clicked
+    // TODO: make sure the URL changes for a specific category
+  })
+
+  // TODO: click the "back" button and make sure the URL changes
+  // TODO: make sure the category circle reappears
+  // TODO: make sure the individual category section disappears
+
+  // TODO: (less important) click "forward" button and have same category reappear (same test as above)
 
   // it('cy.go() - go back or forward in the browser\'s history', () => {
   //   // https://on.cypress.io/go
