@@ -6,6 +6,7 @@ export { renderCategory };
 console.log("calling individual category js file");
 
 const renderCategory = (categoryId) => {
+  console.log('render category')
 
   // change URL here to match rendered category
   const categoryUrl = new URL(window.location);
